@@ -1,8 +1,21 @@
+/* GLOBAL */
 *{
 box-sizing: border-box;
 margin: 0;
 padding: 0;
 }
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+.clearfixf::after {
+content: "";
+display: table;
+clear: both;
+}
+
 
 /* DIMENSIONI CONTAINER PREINPOSTATE */
 
@@ -11,6 +24,90 @@ padding: 0;
     width: 100%;
 }
 
+/* MAIN */
+.container_webapp{
+  width: calc(100% - 200px);
+    float: right;
+}
+
+
+/* HEADER */
+
+#main_header{
+    background-color: #080B12;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+.upgrande_text{
+    border: 1px solid white;
+    margin: 15px 0 20px 0;
+    padding: 10px 30px;
+    border-radius: 20px ;
+    font-size: 0.7rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+/* WEBAPP CONTENT */
+#webapp_content{
+    height: 1000px;
+    background-color: #141922;
+}
+
+/* SEZIONE MENU */
+
+.section_container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu_section{
+    display: flex;
+    align-items: center;
+}
+
+.section_text{
+    color: #7D7F84;
+    display: inline-block;
+    font-weight: 700;
+    margin-right: 10px;
+}
+
+.webapp_section{
+    margin-top: 15px;
+}
+
+.last_section{
+    margin-right: 0;
+}
+
+.underline_container{
+    display: inline-block;
+    position: relative;
+}
+
+.underline_green{
+    border-color: #ADFF2F;
+    position: absolute;
+    margin: 3px 30% 0 30%;
+    width: 35px;
+}
+
+/* SIDEBAR */
+
+#sidebar{
+    background-color: black;
+    height: 100vh;
+    position: fixed;
+    width: 200px;
+}
+
+
+/* FOOTER */
 #footer_fixed{
     height: 100px;
     position: fixed;
@@ -19,4 +116,16 @@ padding: 0;
     background-color: #282828;
 }
 
-/* FOOTER */
+#footer_container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.foto_song{
+        height: 15%;
+}
+
+.song_title{
+    display: inline-block;
+    margin: 0 40px 0 10px;
+}

@@ -11,11 +11,74 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
         integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <!-- Struttura principale -->
-    <div id="container_structure"></div>
+
+    <!-- Main -->
+    <main id="container_structure clearfix">
+
+        <!-- Sidebar -->
+        <aside id="sidebar">
+            <div class="playlist">
+                <div class="logo">
+                    <img src="./img/logo.svg" alt="Logo Spotify">
+                </div>
+                <div class="menu_link">
+                    <img src="./img/home.svg" alt="Home">
+                    <p class="menu_link_text"></p>
+                    <img src="./img/search.svg" alt="Ricerca">
+                    <p class="menu_link_text"></p>
+                    <img src="./img/libreria.svg" alt="Libreria">
+                    <p class="menu_link_text"></p>
+                </div>
+                <div class="playlist">
+                    <h3>PLAYLIST</h3>
+                    <i class="fas fa-plus-square"></i>
+                    <p class="crea_playlist">Crea Playlist</p>
+                    <p class="nome_playlist">Nome Playlist</p>
+                    <p class="nome_playlist">Nome Playlist</p>
+                    <p class="nome_playlist">Nome Playlist</p>
+                    <p class="nome_playlist">Nome Playlist</p>
+                    <p class="nome_playlist">Nome Playlist</p>
+                    <p class="nome_playlist">Nome Playlist</p>
+                    <p class="nome_playlist">Nome Playlist</p>
+                </div>
+            </div>
+            <div class="account">
+                <p class="install"><i class="far fa-arrow-alt-circle-down"></i>Installa app</p>
+                <hr>
+                <img src="./img/profile.svg" alt="Profilo">
+                <p class="name">John Doe</p>
+            </div>
+        </aside>
+        <div class="container_webapp">
+            <!-- Header -->
+            <header id="main_header">
+                <div class="upgrade_container">
+                    <p class="upgrande_text">EFFETTUA L'UPGRADE</p>
+                </div>
+            </header>
+            <div id="webapp_content">
+                <div class="section_container">
+                    <div class="webapp_section">
+                        <div class="underline_container">
+                            <p class="section_text">IN EVIDENZA</p>
+                            <hr class="underline_green">
+                        </div>
+                        <p class="section_text">PODCAST</p>
+                        <p class="section_text">CLASSIFICHE</p>
+                        <p class="section_text">GENERI E MOOD</p>
+                        <p class="section_text">NUOVE USCITE</p>
+                        <p class="section_text last_section">SCOPRI</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
     <!-- Footer fixed -->
     <div id="footer_fixed">
         <div id="footer_container">
@@ -44,7 +107,13 @@
                     <p>4.35</p>
                 </div>
             </div>
-            <div class="footer_option"></div>
+            <div class="footer_option">
+                <i class="fas fa-list"></i>
+                <i class="fas fa-tv"></i>
+                <i class="fas fa-volume-up"></i>
+                <label for="file"></label>
+                <progress id="file" max="200" value="40"></progress>
+            </div>
         </div>
     </div>
 
