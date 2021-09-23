@@ -8,9 +8,45 @@
     <title>Spotify Web</title>
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
+    <!-- Struttura principale -->
+    <div id="container_structure"></div>
+    <!-- Footer fixed -->
+    <div id="footer_fixed">
+        <div id="footer_container">
+            <!-- Container per position flex -->
+            <div class="song_dett">
+                <img src="./img/sinister.jpeg" alt="foto_song">
+                <div class="song_title">
+                    <h3>Sinister</h3>
+                    <p>Brano nome</p>
+                </div>
+                <i class="far fa-heart"></i>
+                <i class="far fa-folder"></i>
+            </div>
+            <div class="music_option">
+                <div class="music_player">
+                    <i class="fas fa-random"></i>
+                    <i class="fas fa-step-backward"></i>
+                    <i class="far fa-play-circle"></i>
+                    <i class="fas fa-step-forward"></i>
+                    <i class="fas fa-redo-alt"></i>
+                </div>
+                <div class="music_time">
+                    <p>0.25</p>
+                    <label for="file"></label>
+                    <progress id="file" max="200" value="40"></progress>
+                    <p>4.35</p>
+                </div>
+            </div>
+            <div class="footer_option"></div>
+        </div>
+    </div>
 
 </body>
 
