@@ -108,6 +108,12 @@ clear: both;
 
 
 /* FOOTER */
+
+.song_dett{
+    display: flex;
+    align-items: center;
+}
+
 #footer_fixed{
     height: 100px;
     position: fixed;
@@ -119,13 +125,20 @@ clear: both;
 #footer_container{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    height: 100%;
 }
 
 .foto_song{
-        height: 15%;
+    height: 50px;
 }
 
 .song_title{
     display: inline-block;
     margin: 0 40px 0 10px;
+}
+
+.song_icon{
+    display: inline-block;
+    word-spacing: 10px;
 }
