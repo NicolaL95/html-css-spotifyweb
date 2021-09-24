@@ -16,6 +16,10 @@ display: table;
 clear: both;
 }
 
+.border_radius{
+    border-radius: 50%;
+}
+
 /* COLORING */
 
 .gray{
@@ -69,7 +73,7 @@ clear: both;
 
 /* WEBAPP CONTENT */
 #webapp_content{
-    height: 1000px;
+    height: 1400px;
     background-color: #141922;
 }
 
@@ -120,11 +124,11 @@ clear: both;
     margin: 25px 0 0 0;
 }
 
-.recently_played_title{
+.webapp_main_title{
     margin: 0 0 10px 15px;
 }
 
-.recently_played_container{
+.webapp_main_container{
     display: flex;
     justify-content: space-around;
     margin-top: 25px;
@@ -147,6 +151,22 @@ clear: both;
 
 .img_dett > img {
     width: 250px;
+}
+
+.webapp_song{
+    margin-top: 15px;
+}
+
+.webapp_desc{
+    margin-top: 10px;
+}
+
+
+.small_size{
+    width: calc(100% / 3)
+}
+.main_title_container{
+    margin: 0 0 25px 15px;
 }
 
 /* SIDEBAR */
