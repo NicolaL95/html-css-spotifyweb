@@ -28,12 +28,18 @@
                     <img src="./img/logo.svg" alt="Logo Spotify">
                 </div>
                 <div class="menu_link">
-                    <img src="./img/home.svg" alt="Home">
-                    <p class="menu_link_text"></p>
-                    <img src="./img/search.svg" alt="Ricerca">
-                    <p class="menu_link_text"></p>
-                    <img src="./img/libreria.svg" alt="Libreria">
-                    <p class="menu_link_text"></p>
+                    <div class="img_container">
+                        <img class="img_nav" src="./img/home.svg" alt="Home">
+                        <p class="menu_link_text">Home</p>
+                    </div>
+                    <div class="img_container gray">
+                        <img class="img_nav gray_image" src="./img/search.svg" alt="Ricerca">
+                        <p class="menu_link_text">Cerca</p>
+                    </div>
+                    <div class="img_container gray ">
+                        <img class="img_nav gray_image" src="./img/libreria.svg" alt="Libreria">
+                        <p class="menu_link_text">La tua libreria</p>
+                    </div>
                 </div>
                 <div class="playlist">
                     <h3>PLAYLIST</h3>
@@ -87,9 +93,9 @@
                 <img class="foto_song" src="./img/sinister.jpeg" alt="foto_song">
                 <div class="song_title">
                     <h3>Sinister</h3>
-                    <p>Brano nome</p>
+                    <p class="gray">Brano nome</p>
                 </div>
-                <div class="song_icon">
+                <div class="song_icon gray">
                     <i class="far fa-heart"></i>
                     <i class="far fa-folder"></i>
                 </div>
@@ -100,12 +106,12 @@
                     <i class="fas fa-step-backward"></i>
                     <i class="far fa-play-circle"></i>
                     <i class="fas fa-step-forward"></i>
-                    <i class="fas fa-redo-alt"></i>
+                    <i class="fas fa-redo"></i>
                 </div>
                 <div class="music_time">
                     <p>0.25</p>
                     <label for="file"></label>
-                    <progress id="file" max="200" value="40"></progress>
+                    <progress id="file" max="500" value="80"></progress>
                     <p>4.35</p>
                 </div>
             </div>
