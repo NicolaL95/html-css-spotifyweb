@@ -159,6 +159,8 @@ clear: both;
 
 .webapp_desc{
     margin-top: 10px;
+     color: #6C6C6C ;
+     font-weight: 600;
 }
 
 
@@ -240,12 +242,13 @@ clear: both;
     font-size: 0.8rem;
 }
 
-.install > i{
-     margin-right: 10px;
+.account > i{
+     margin-right: 5px;
 }
 
 .install{
     font-size: 0.9rem;
+    display: inline-block;
 }
 
 .install_hr{
@@ -335,13 +338,20 @@ clear: both;
     font-size: 2rem;
 }
 
+.player_hover_container{
+    padding-left: 0.05rem;
+   padding-right: 0.05rem;
+}
+
 .music_time p{
     display: inline-block;
 }
 
-#file{
+.file{
     width: 400px;
     margin: 0 20px 0 10px;
+        filter: grayscale(100);
+    transform: rotate(180deg);
 }
 
 .music_time{
@@ -354,4 +364,46 @@ clear: both;
 
 .file_option{
     width: 200px;
+}
+
+/* HOVER */
+
+.upgrande_text:hover{
+    margin: 12px 5px 17px 0;
+    padding: 13px 33px;
+}
+
+
+.gray_font:hover,.menu_link_text:hover, .crea_playlist:hover,.nome_playlist:hover, .install:hover, .section_text:hover{
+    color: white;
+    cursor: pointer;
+}
+
+.wht_icon:hover{
+    color: white;
+     cursor: pointer;
+}
+
+.underline_wht:hover{
+    color: white;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.icon_cursor:hover{
+    cursor: pointer;
+
+}
+
+.player_hover_container:hover{
+   padding-left: 0;
+   padding-right: 0;
+}
+
+.player_hover_container:hover > .player_size{
+    font-size: 2.1rem;
+}
+
+.footer_option i:hover{
+    cursor: pointer;
 }

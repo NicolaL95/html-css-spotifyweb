@@ -59,7 +59,8 @@
                 </div>
             </div>
             <div class="account">
-                <p class="install gray font_w"><i class="far fa-arrow-alt-circle-down"></i>Installa app</p>
+                <i class="far fa-arrow-alt-circle-down gray font_w"></i>
+                <p class="install gray font_w">Installa app</p>
                 <hr class="gray_hr install_hr">
                 <div class="name_container">
                     <img src="./img/profile.svg" alt="Profilo">
@@ -217,25 +218,27 @@
                 <img class="foto_song" src="./img/sinister.jpeg" alt="foto_song">
                 <div class="song_title">
                     <h3>Sinister</h3>
-                    <p class="gray">Brano nome</p>
+                    <p class="gray underline_wht">Brano nome</p>
                 </div>
                 <div class="song_icon gray">
-                    <i class="far fa-heart"></i>
-                    <i class="far fa-folder"></i>
+                    <i class="far fa-heart wht_icon"></i>
+                    <i class="far fa-folder wht_icon"></i>
                 </div>
             </div>
             <div class="music_option">
                 <div class="music_player">
-                    <i class="fas fa-random"></i>
-                    <i class="fas fa-step-backward"></i>
-                    <i class="far fa-play-circle player_size"></i>
-                    <i class="fas fa-step-forward"></i>
-                    <i class="fas fa-redo"></i>
+                    <i class="fas fa-random icon_cursor"></i>
+                    <i class="fas fa-step-backward icon_cursor"></i>
+                    <div class="player_hover_container">
+                        <i class="far fa-play-circle player_size icon_cursor"></i>
+                    </div>
+                    <i class="fas fa-step-forward icon_cursor"></i>
+                    <i class="fas fa-redo icon_cursor"></i>
                 </div>
                 <div class="music_time">
                     <p>0.25</p>
                     <label for="file"></label>
-                    <progress id="file" max="400" value="80"></progress>
+                    <progress class="file" max="400" value="300"></progress>
                     <p>4.35</p>
                 </div>
             </div>
@@ -244,7 +247,7 @@
                 <i class="fas fa-tv"></i>
                 <i class="fas fa-volume-up"></i>
                 <label for="file file_option"></label>
-                <progress id="file file_option" max="400" value="80"></progress>
+                <progress class="file file_option" max="400" value="80"></progress>
             </div>
         </div>
     </div>
