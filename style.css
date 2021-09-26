@@ -84,6 +84,7 @@ clear: both;
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 0.9rem;
 }
 
 .menu_section{
@@ -132,7 +133,6 @@ clear: both;
     display: flex;
     justify-content: space-around;
     margin-top: 25px;
-    flex-wrap: wrap;
 }
 
 .preview_container{
@@ -150,11 +150,12 @@ clear: both;
 }
 
 .img_dett > img {
-    width: 250px;
+    width: 100%;
 }
 
 .webapp_song{
     margin-top: 15px;
+    font-size: 0.9rem;
 }
 
 .webapp_desc{
