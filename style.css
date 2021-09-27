@@ -73,7 +73,7 @@ clear: both;
 
 /* WEBAPP CONTENT */
 #webapp_content{
-    height: 1400px;
+    height: 1600px;
     background-color: #141922;
 }
 
@@ -139,13 +139,20 @@ clear: both;
 .webapp_main_container{
     display: flex;
     justify-content: space-between;
-    margin: 25px 15px 0 15px;
+    margin: 25px 0 0 0;
 
 }
 
 .preview_container{
-        width: 250px;
+    width: calc(100% / 6);
     text-align: center;
+    padding: 0 10px;
+}
+
+.preview_container_small{
+    width: calc(100% / 2);
+    text-align: center;
+    padding: 0 10px;
 }
 
 .song_row{
@@ -374,7 +381,7 @@ clear: both;
 }
 
 .file{
-    width: 400px;
+    /* width: 400px; */
     margin: 0 20px 0 10px;
         filter: grayscale(100);
     transform: rotate(180deg);
@@ -382,14 +389,20 @@ clear: both;
 
 .music_time{
     margin-top: 5px;
+    display: flex;
 }
 
 .footer_option{
     word-spacing: 10px;
+    display: flex;
+}
+
+.footer_option i{
+    padding: 0 5px;
 }
 
 .file_option{
-    width: 200px;
+  /*   width: 200px; */
 }
 
 .option_container, .bar_option_container{
@@ -450,25 +463,20 @@ clear: both;
 
 /* MEDIA QUERY */
 
-@media screen and (max-width: 1322px){
-
-
-.webapp_main_container.webapp_main_container{
+@media screen and (max-width: 1024px){
+    .preview_container{
+        width: calc(100% / 4);
+     
+    }
+    .webapp_main_container{
     flex-wrap: wrap;
     justify-content: normal;
 }
-#webapp_content{
-    height: 1750px;
-}
-
-.small_size{
-    width: 100%;
-}
-
 }
 
 @media screen and (max-width: 768px){
-    #webapp_content{
-    height: 2200px;
-}
+    .preview_container{
+        width: calc(100% / 2);
+     
+    }
 }
