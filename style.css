@@ -8,6 +8,7 @@ padding: 0;
 body{
     font-family: 'Montserrat', sans-serif;
     color: #FEFEFE;
+    overflow: hidden;
 }
 
 .clearfixf::after {
@@ -49,6 +50,8 @@ clear: both;
 .container_webapp{
   width: calc(100% - 225px);
     float: right;
+    overflow: scroll;
+    height: 1000px;
 }
 
 
@@ -316,6 +319,7 @@ clear: both;
 .song_dett{
     display: flex;
     align-items: center;
+
 }
 
 #footer_fixed{
@@ -339,9 +343,14 @@ clear: both;
 }
 
 .song_title{
-    display: inline-block;
+    display: flex;
     margin: 0 40px 0 10px;
     font-size: 0.8rem;
+    flex-direction: column;
+}
+
+.song_icon:first-child{
+        margin-right: 10px;
 }
 
 .song_title > p{
@@ -349,8 +358,7 @@ clear: both;
 }
 
 .song_icon{
-    display: inline-block;
-    word-spacing: 10px;
+    display:flex;
 }
 
 .music_player{
@@ -364,7 +372,7 @@ clear: both;
 .music_option{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center
 }
 
 .music_player i:not(.player_size){
@@ -382,13 +390,6 @@ clear: both;
 
 .music_time p{
     display: inline-block;
-}
-
-.file{
-    /* width: 400px; */
-    margin: 0 20px 0 10px;
-        filter: grayscale(100);
-    transform: rotate(180deg);
 }
 
 .music_time{
@@ -458,7 +459,7 @@ float: left;
 
 
 .option_container, .bar_option_container{
-    display: inline-block;
+    display: flex;
 }
 
 /* HOVER */
