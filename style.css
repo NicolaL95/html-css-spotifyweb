@@ -357,8 +357,8 @@ clear: both;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 230px;
     margin-bottom: 5px;
+    width: 50%;
 }
 
 .music_option{
@@ -394,20 +394,68 @@ clear: both;
 .music_time{
     margin-top: 5px;
     display: flex;
+    align-items: center;
 }
 
 .footer_option{
     word-spacing: 10px;
     display: flex;
+    align-items: center;
 }
 
 .footer_option i{
     padding: 0 5px;
 }
 
-.file_option{
-  /*   width: 200px; */
+.player_container{
+       background-color: #5A5A5A;
+    width: 400px;
+    height: 5px;
+    border-radius: 25px;
+    margin: 0 25px;
 }
+
+.player_container > i{
+float: left;
+}
+
+.audio_container > i{
+    float: right;
+    margin-top: -10px;
+    margin-right: 165px;
+    display: none;
+}
+
+.player_container > i{
+    float: right;
+    margin-top: -10px;
+    margin-right: 315px;
+    display: none;
+}
+
+.player_bar{
+        width: 20%;
+    background-color: #C1C1C1;
+    height: 100%;
+    border-radius: 25px;
+}
+
+.audio_container{
+       background-color: #5A5A5A;
+    width: 200px;
+    height: 5px;
+    border-radius: 25px;
+       margin-left: 10px;
+}
+
+.audio_bar{
+        width: 10%;
+    background-color: #C1C1C1;
+    height: 100%;
+    border-radius: 25px;
+}
+
+
 
 .option_container, .bar_option_container{
     display: inline-block;
@@ -463,7 +511,13 @@ clear: both;
     opacity: 0.2; 
 }
 
+.audio_container:hover > .audio_bar, .player_container:hover > .player_bar{
+    background-color: #ADFF2F;
+}
 
+.audio_container:hover > i,.player_container:hover > i {
+    display: block;
+}
 
 /* MEDIA QUERY */
 
@@ -490,8 +544,13 @@ clear: both;
         width: calc(100% / 2);
     }
     .preview_container_small {
-    width: calc(100% / 4);
+    width: calc(100% / 2);
 }
+#webapp_content{
+    height: 2100px;
+}
+
+
 }
 
 @media screen and (max-width: 480px){
@@ -515,6 +574,8 @@ clear: both;
     .preview_container_small {
     width: calc(100% / 2);
         }
+
+
     .account p, .account hr{
         display: none;
     }
@@ -558,6 +619,5 @@ width: 28px;
     align-items: center;
     width: 25px;
 }
-
 }
 
