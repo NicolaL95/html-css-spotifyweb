@@ -349,7 +349,7 @@ clear: both;
     flex-direction: column;
 }
 
-.song_icon:first-child{
+.song_icon > i{
         margin-right: 10px;
 }
 
@@ -366,7 +366,7 @@ clear: both;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 5px;
-    width: 50%;
+    width: 200px;
 }
 
 .music_option{
@@ -540,6 +540,38 @@ float: left;
 }
 }
 
+@media screen and (max-width: 1030px){
+
+.audio_container{
+    width: 150px;
+}
+
+.player_container {
+    width: 300px;
+}
+
+.song_title {
+    margin: 0 20px 0 10px;
+}
+
+}
+
+
+@media screen and (max-width: 850px){
+
+.audio_container{
+    width: 100px;
+}
+
+.player_container {
+    width: 200px;
+}
+
+.song_title {
+    margin: 0 10px 0 10px;
+}
+}
+
 @media screen and (max-width: 768px){
     .preview_container{
         width: calc(100% / 2);
@@ -553,6 +585,25 @@ float: left;
 
 
 }
+
+
+@media screen and (max-width: 720px){
+
+.audio_container{
+    width: 100px;
+}
+
+.player_container {
+    width: 200px;
+}
+
+.song_title {
+    margin: 0 10px 0 10px;
+}
+
+}
+
+
 
 @media screen and (max-width: 480px){
     .img_nav{
@@ -622,3 +673,30 @@ width: 28px;
 }
 }
 
+
+@media screen and (max-width: 480px){
+    #footer_container{
+        flex-wrap: wrap;
+    }
+.song_dett{
+    margin-right: 225px;
+    left: 0;
+    top: 0;
+    position: absolute;
+    
+}
+
+.foto_song{
+    display: none;
+}
+
+.song_icon{
+    display: none;
+}
+
+#footer_container{
+justify-content: center;
+}
+
+    
+}
